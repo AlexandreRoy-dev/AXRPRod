@@ -198,56 +198,67 @@ body { transition: opacity .4s ease; }
 
     <!-- HERO
     ================================================== -->
-    <section class="section section-top section-full">
+    <section class="section section-top section-full d-flex align-items-center">
 
-      <!-- Cover -->
-      <div class="bg-cover" style="background-image: url(assets/img/pexels-binyaminmellish-1396122.jpg)"></div>
+  <!-- Cover -->
+  <div class="bg-cover">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="assets/Vid/Accueil2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-      <!-- Overlay -->
-      <div class="bg-overlay"></div>
+  <!-- Overlay -->
+  <div class="bg-overlay"></div>
 
-      <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+  <!-- Triangles -->
+  <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+  <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
 
-      <!-- Content -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-lg-5 align-self-end">
+  <!-- Content -->
+  <div class="container">
+    <div class="row align-items-center"> <!-- center vertically -->
+      <div class="col-md-8 col-lg-5">
 
-            <!-- Preheading -->
-            <p class="font-weight-medium text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
-              Bienvenue chez AXR construction 
-            </p>
-            
-            <!-- Heading -->
-            <h1 class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
-              Construisez votre rêve
-            </h1>
+        <!-- Preheading -->
+        <p class="font-weight-medium text-xs text-uppercase text-white text-muted"
+           data-toggle="animation" data-animation="fadeUp" data-animation-order="0"
+           data-animation-trigger="load">
+          Bienvenue chez AXR construction
+        </p>
+        
+        <!-- Heading -->
+        <h1 class="text-primary mb-4"
+            data-toggle="animation" data-animation="fadeUp" data-animation-order="1"
+            data-animation-trigger="load">
+          Construisez votre rêve
+        </h1>
 
-            <!-- Subheading -->
-            <p class="text-white  mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
-              Votre partenaire de confiance pour des projets de construction et rénovation en Estrie.
-            </p>
+        <!-- Subheading -->
+        <p class="text-white mb-5"
+           data-toggle="animation" data-animation="fadeUp" data-animation-order="2"
+           data-animation-trigger="load">
+          Votre partenaire de confiance pour des projets de construction et rénovation en Estrie.
+        </p>
 
-            <!-- Button -->
-            <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-              <a href="#contact" class="btn btn-outline-primary text-white">
-                Nous contacter
-            </a>
-            </div>
+        <!-- Button -->
+        <div class="mb-5 mb-md-0"
+             data-toggle="animation" data-animation="fadeUp" data-animation-order="3"
+             data-animation-trigger="load">
+          <a href="#contact" class="btn btn-outline-primary text-white">
+            Nous contacter
+          </a>
+        </div>
 
-          </div>
-          <div class="col-md-4 col-lg-7 align-self-center d-flex justify-content-end">
-            
-            <!-- Heading -->
-            
+      </div>
+      <div class="col-md-4 col-lg-7 d-flex justify-content-end">
+        <!-- Right side content (if any) -->
+      </div>
+    </div>
+  </div>
 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+</section>
 
-    </section>
 
     <!-- FEATURES
     ================================================== -->
