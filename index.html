@@ -28,6 +28,7 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/theme.min.css">
+    
 
     <style>
 /* start hidden */
@@ -47,6 +48,21 @@ body { transition: opacity .4s ease; }
   border-color: #BFB172 !important;
 }
 
+.navbar-brand-svg {
+  transform: scale(1.5); /* increase size by 50% */
+  transform-origin: left center; /* keep aligned left */
+}
+
+.navbar-toggler {
+  padding: 0.75rem 1rem;   /* bigger clickable area */
+  font-size: 1.25rem;      /* increase icon scaling */
+}
+/* For dark navbars */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: 1.75em 1.75em; /* make the icon itself larger */
+}
+
 
     </style>
 
@@ -56,27 +72,7 @@ body { transition: opacity .4s ease; }
 
     <!-- MODALS
     ================================================== -->
-    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-lg" role="document">
-        <div class="modal-content">
-
-          <!-- Header -->
-          <div class="modal-header">
-
-            <!-- Title -->
-            <h4 class="modal-title text-white" id="modal-video-header">
-              Video demonstration
-            </h4>
-
-            <!-- Close -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-          </div>
-          <div class="modal-body">
-        
-            <!-- Video -->
+   
             
 
           </div>

@@ -29,6 +29,24 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/theme.min.css">
 
+    <style>
+    
+    .navbar-brand-svg {
+  transform: scale(1.5); /* increase size by 50% */
+  transform-origin: left center; /* keep aligned left */
+}
+
+.navbar-toggler {
+  padding: 0.75rem 1rem;   /* bigger clickable area */
+  font-size: 1.25rem;      /* increase icon scaling */
+}
+/* For dark navbars */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: 1.75em 1.75em; /* make the icon itself larger */
+}
+</style>
+
     <title>AXR | Construction</title>
   </head>
   <body>
@@ -69,7 +87,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="index.html">
+       <a class="navbar-brand" href="index.html">
           <svg class="navbar-brand-svg" viewBox="0 0 245 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image href="./assets/img/Logo accueil axr.png" x="0" y="0" width="245" height="150" />
           </svg>            

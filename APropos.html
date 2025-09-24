@@ -35,36 +35,45 @@
 body.is-loading { opacity: 0; }
 /* fade to visible */
 body { transition: opacity .4s ease; }
+.section.bg-light {
+  position: relative;
+  z-index: 0;
+}
 
+.section.bg-light .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(50, 50, 50, 0.6); /* semi-transparent gray */
+  z-index: 0;
+}
+
+.section.bg-light .container {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand-svg {
+  transform: scale(1.5); /* increase size by 50% */
+  transform-origin: left center; /* keep aligned left */
+}
+
+.navbar-toggler {
+  padding: 0.75rem 1rem;   /* bigger clickable area */
+  font-size: 1.25rem;      /* increase icon scaling */
+}
+/* For dark navbars */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: 1.75em 1.75em; /* make the icon itself larger */
+}
     </style>
 
     <title>AXR | Construction</title>
   </head>
   <body>
 
-    <!-- MODALS
-    ================================================== -->
-    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-lg" role="document">
-        <div class="modal-content">
 
-          <!-- Header -->
-          <div class="modal-header">
-
-            <!-- Title -->
-            <h4 class="modal-title text-white" id="modal-video-header">
-              Video demonstration
-            </h4>
-
-            <!-- Close -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-          </div>
-          <div class="modal-body">
-        
-            <!-- Video -->
             
 
           </div>
@@ -194,35 +203,28 @@ body { transition: opacity .4s ease; }
       </div> <!-- / .container -->    
     </nav>
 
-<section class="section section-top section bg-light ">
+<section class="section section-top section bg-light"
+         style="background-image: url('assets/img/coverapropos.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-      <!-- Content -->
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-            <!-- Preheading -->
-            <p class="font-weight-medium text-center text-xs text-uppercase text-primary" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
-              AXR Construction
-            </p>
-            
-            <!-- Heading -->
-            <h1 class="mb-4 text-center" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
-              À propos de nous
-            </h1>
+  <!-- Content -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <p class="font-weight-medium text-center text-xs text-uppercase text-white">
+          AXR Construction
+        </p>
+        <h1 class="mb-4 text-center text-primary">À propos de nous</h1>
+        <p class="mb-6 text-center text-white">
+          Nous croyons que chaque réalisation naît d’une vision partagée entre nos clients et notre équipe. Derrière chaque chantier, il y a des femmes et des hommes passionnés : contremaîtres, charpentiers-menuisiers et ouvriers qualifiés, qui mettent leur expertise et leur dévouement au service de la qualité.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <!-- Text -->
-            <p class="mb-6 text-center text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
-              Nous croyons que chaque réalisation naît d’une vision partagée entre nos clients et notre équipe. Derrière chaque chantier, il y a des femmes et des hommes passionnés : contremaîtres, charpentiers-menuisiers et ouvriers qualifiés, qui mettent leur expertise et leur dévouement au service de la qualité.
-            </p>
-
-          </div>
-
-          
-
-
-          
-        </section>
 
     <!-- ABOUT
     ================================================== -->
@@ -516,7 +518,7 @@ body { transition: opacity .4s ease; }
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="assets/img/Gary.jpg" alt="..." class="card-img-top" >
+                  <img src="assets/img/a venir.png" alt="..." class="card-img-top" >
 
                   <!-- Body -->
                   <div class="card-body">
